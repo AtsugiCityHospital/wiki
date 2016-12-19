@@ -44,8 +44,7 @@ user$ ssh-keygen -t rsa -N '' -f $HOME/.ssh/id_rsa
 
 アカウント名は、ogawa、yoshimineなど苗字と致します。またパスワードは便宜上こちらで設定させて頂きますので、
 
-後日、自分でpasswdをつかって変更して下さい。
-
+後日、自分でpasswdをつかって変更して下さい。　** root のパスワードは個別に問い合わせをお願い致します。
 ```
 ex) root# passwd yoshimine
 
