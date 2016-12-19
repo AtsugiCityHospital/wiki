@@ -50,6 +50,58 @@ ex) root# passwd yoshimine
 
 ```
 
+## 3. 公開鍵を中間サーバーと病院のマシンに登録する
+
+2.の手順で生成した公開鍵（`id_rsa.pub`）ファイルを`authorized_keys`として病院のマシンと中間サーバに登録します。
+この手順は既に病院のマシンに接続できるPCで作業すると簡単に登録が行なえます。
+公開鍵は秘密鍵とは違いメールやskypeなどで送信しても問題ありません。
+
+### 3-1. 公開鍵を中間サーバーに登録する
+
+- 作業場所: 中間サーバー
+- 作業ユーザー: ganka
+
+公開鍵を病院のマシンに転送します。以下の手順は既に設定が完了しているPCで作業することを想定しています。
+
+まずメールなどで転送した公開鍵を中間サーバーに転送します。
+
+```shell
+user$ scp id_rsa.pub ganka@tk2-204-11581.vs.sakura.ne.jp:
+id_rsa.pub                                    100%  399    54.5KB/s   00:00
+```
+
+次に，中間サーバーにログインし，公開鍵を登録します。
+
+```shell
+user$ ssh ganka@tk2-204-11581.vs.sakura.ne.jp
+ganka$ cat id_rsa.pub >> .ssh/authorized_keys
+```
+
+ローカルPCから接続できることを確認します。
+
+```shell
+user$ ssh ganka@tk2-204-11581.vs.sakura.ne.jp
+```
+
+### 3-2. 公開鍵を病院のマシンに登録する
+
+- 作業場所: 病院のマシン
+- 作業ユーザー: ganka
+
+中間サーバーに転送した公開鍵をさらに病院のマシンに転送します。
+
+```
+ganka$ scp -p id_rsa ganka@localhost:
+id_rsa.pub                                    100%  399    54.5KB/s   00:00
+```
+
+同様に公開鍵を登録します。
+
+```shell
+user$ ssh ganka@tk2-204-11581.vs.sakura.ne.jp
+ganka$ cat id_rsa.pub >> .ssh/authorized_keys
+```
+
 
 
 ##4.ローカルマシンを設定する
@@ -136,7 +188,7 @@ Password; YOURS
 
 Startをクリックするか、ダブルクリックで接続後、再度パスワードを入力するとACHに入れます。
 
-##7.使用の注意点　
+##7.使用上の注意点　
 
 - matlab使用権限
 - 
