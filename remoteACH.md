@@ -141,14 +141,16 @@ Startをクリックするか、ダブルクリックで接続後、再度パス
 - matlab使用権限
 - 
 
-ACHへは個人のアカウントで接続されます。matlabを含む多くの解析ソフトはgankaアカウントに紐付けされているため、command line上でgankaに変更する必要があります。
-
+ACHへは個人のアカウントで接続されます。matlabを含む多くの解析ソフトはgankaアカウントに紐付けされているため、terminal上でgankaに変更する必要があります。** 個人アカウントでは、使用できません。
 ```
 ogawa# su - ganka
 password ganka1
 ```
 現在は2015bがdefaultに設定されています。
 
+```
+alias matlab=.../MATLAB2015b/bin/matlab
+```
 
 - HDDの使用について
 - 
