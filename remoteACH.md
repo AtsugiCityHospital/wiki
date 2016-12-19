@@ -169,3 +169,8 @@ USB_HDD2
 - 
 
 現在は多くのアカウントがogawaの設定となっています。（個人のメールも丸見えです）。matlab権限が個人使用のためです。気持ちの良い運用をお願い致します。
+
+- githubをどうしても使いたい上級者
+https://github.com/youkinjoh/TrainingWebSocket/wiki/同一端末で、複数のGitHubアカウントを使い分ける方法
+- githubをどうしても使いたいのみ
+- githubをどうしても使いたい
