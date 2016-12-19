@@ -42,7 +42,7 @@ user$ ssh-keygen -t rsa -N '' -f $HOME/.ssh/id_rsa
 
 送って頂いた公開鍵を、中間サーバーsakura、ACHにこちらで登録致します。
 
-アカウント名は、ogawa、yoshimineなど致します。またパスワードは、便宜上こちらで設定させて頂きますので、
+アカウント名は、ogawa、yoshimineなど苗字と致します。またパスワードは便宜上こちらで設定させて頂きますので、
 
 後日、自分でpasswdをつかって変更して下さい。
 
