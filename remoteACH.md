@@ -172,5 +172,3 @@ USB_HDD2
 
 - githubをどうしても使いたい上級者
 https://github.com/youkinjoh/TrainingWebSocket/wiki/同一端末で、複数のGitHubアカウントを使い分ける方法
-- githubをどうしても使いたいのみ
-- githubをどうしても使いたい
