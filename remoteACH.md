@@ -115,7 +115,7 @@ https://itunes.apple.com/jp/app/microsoft-remote-desktop/id715768417?mt=12
 
 ##6.リモートアクセス
 
-まずsakuraへのssh接続を行います。4.の設定が正しく行われていれば、command line上で、
+まずsakuraへのssh接続を行います。4.の設定が正しく行われていれば、terminal上で、
 
 ```
 atsugi
