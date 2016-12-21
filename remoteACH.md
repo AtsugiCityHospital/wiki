@@ -108,7 +108,6 @@ id_rsa.pub                                    100%  399    54.5KB/s   00:00
 同様に公開鍵を登録します。
 
 ```shell
-user$ ssh ganka@tk2-204-11581.vs.sakura.ne.jp
 ganka$ cat id_rsa.pub >> .ssh/authorized_keys
 ```
 
