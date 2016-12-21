@@ -2,7 +2,16 @@ ACH　linux へのリモートアクセス
 ===
 
 - mac対応
-- Winは、opensshを使用、　https://github.com/PowerShell/Win32-OpenSSH
+- Winは、opensshを使用
+
+https://blogs.msdn.microsoft.com/miyamam/2016/04/09/powershell%E3%81%A7ssh%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/
+
+を参考に。
+
+https://github.com/PowerShell/Win32-OpenSSH
+https://github.com/PowerShell/Win32-OpenSSH/releases
+
+64
 
 ##1. ssh鍵を作成する
 
