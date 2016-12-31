@@ -161,6 +161,11 @@ MNI_DIR           /home/ganka/bin/freesurfer-5.1/mni
 user$ echo "alias atsugi='ssh -fNL 3389:localhost:3389 atsugi'" >> .bash_profile
 ```
 
+こっちの方がいいかも。 
+ 
+```
+user$ echo "atsugi='ps x | grep -e ssh | grep -e 3389 > /dev/null && echo Already Connected || ( ssh -fNL 3389:localhost:3389 atsugi && echo Connected )'" >> .bash_profile
+
 ##5.Microsoft Remote DesktopのDL
 - 作業環境: ローカルPC
 - 作業ユーザー: ローカルユーザー
