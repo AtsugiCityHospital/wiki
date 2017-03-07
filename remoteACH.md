@@ -12,8 +12,6 @@ https://github.com/PowerShell/Win32-OpenSSH
 
 https://github.com/PowerShell/Win32-OpenSSH/releases
 
-64
-
 ##1. ssh鍵を作成する
 
 - 作業環境: ローカルPC
