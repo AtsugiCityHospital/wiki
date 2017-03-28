@@ -6,3 +6,12 @@
 user$ ssh sakura
 user$ sudo service sshd restart
 ```
+
+## 2. ACHサーバーを再起動する
+```shell
+@ACH
+
+root$ service autossh restart
+     or
+ganka$ sudo service autossh restart
+```
