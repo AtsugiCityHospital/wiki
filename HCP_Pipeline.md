@@ -1,7 +1,9 @@
 HCP_Pipelineの使い方
 ===
+# Pipelines-3.22.0/Examples/Scripts/SetUpHCPPipeline.shを設定
 
-##PreFreesuferBatch.shの設定
+
+# PreFreesuferBatch.shの設定
 
 AvgrdcSTRING=“NONE"
 
@@ -43,3 +45,7 @@ BrainSize="150"
 FNIRTConfig="${HCPPIPEDIR_Config}/T1_2_MNI152_2mm.cnf"
 
 GradientDistortionCoeffs="NONE"
+
+# FreeSurferPipelineBatch.sh & PostFreeSurferPipelineBatch.sh
+変更不要
+
