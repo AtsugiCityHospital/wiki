@@ -1,9 +1,9 @@
 HCP_Pipelineの使い方
 ===
-# Pipelines-3.22.0/Examples/Scripts/SetUpHCPPipeline.shを設定
+# 1.Pipelines-3.22.0/Examples/Scripts/SetUpHCPPipeline.shを設定
 
 
-# PreFreesuferBatch.shの設定
+# 2.PreFreesuferBatch.shの設定
 
 AvgrdcSTRING=“NONE"
 
@@ -25,7 +25,7 @@ TopupConfig=“${HCPPIPEDIR_Config}/b02b0.cnf”
 
 GEB0InputName="NONE"
 
-# Templates
+## Templates
 T1wTemplate="${HCPPIPEDIR_Templates}/MNI152_T1_1mm.nii.gz" #Hires T1w MNI template
 T1wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T1_1mm_brain.nii.gz" #Hires brain extracted MNI template
 T1wTemplate2mm="${HCPPIPEDIR_Templates}/MNI152_T1_2mm.nii.gz" #Lowres T1w MNI template
